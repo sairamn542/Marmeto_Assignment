@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://marmeto.com/cdn/shop/files/re-black-logo.png?v=1716890348&width=500" height="50"
+                    width="100" alt="Marmeto Logo">
+            </div>
+            <nav>
+                <ul class="nav-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart-section">
+        <div class="cart-header">
+            <div class="cart-contents">
+                <h2>Cart</h2>
+                <h4>Home <i class="fa-solid fa-greater-than"></i> Cart</h4>
+            </div>
+        </div>
+        <div class="cart-content">
+            <div class="cart-items">
+                <!-- Cart items will be injected here -->
+            </div>
+            <div class="cart-totals">
+                <h3>Cart Totals</h3>
+                <p>Subtotal: <span id="cart-subtotal">₹0.00</span></p>
+                <p>Total: <span id="cart-total">₹0.00</span></p>
+                <button id="checkout-btn">Check Out</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <i class="fas fa-trophy"></i>
+                <h4>High Quality</h4>
+                <p>Crafted from top materials</p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Warranty Protection</h4>
+                <p>Over 2 years</p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-truck"></i>
+                <h4>Free Shipping</h4>
+                <p>Order over 150$</p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-headset"></i>
+                <h4>24 / 7 Support</h4>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

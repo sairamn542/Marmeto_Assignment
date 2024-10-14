@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+    width: 100px;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s; /* Add transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #e1c083; /* Change color on hover */
+}
+
+.cart-icons {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 24px;
+}
+
+.cart-section {
+    padding: 20px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-header {
+    background-image: url("https://png.pngtree.com/background/20230626/original/pngtree-palm-plant-adorns-warm-neutral-beige-empty-wall-mockup-in-3d-picture-image_4055145.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-header h2 {
+    font-size: 32px;
+    justify-content: center;
+}
+
+.cart-header h4 {
+    color: black;
+    justify-content: center;
+}
+
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cart-items {
+    flex: 1 1 60%;
+    margin-right: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling for mobile */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+}
+
+table th {
+    background-color: #fefaf6;
+    color: #333;
+}
+
+table td {
+    color: #777;
+}
+
+table td img {
+    max-width: 80px;
+    margin-right: 10px;
+}
+
+.cart-totals {
+    flex: 1 1 20%;
+    background-color: #fefaf6;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.cart-totals h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-totals p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cart-totals span {
+    font-weight: bold;
+    color: #e1c083;
+}
+
+#checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #e1c083;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s; 
+}
+
+#checkout-btn:hover {
+    background-color: #cfaa63;
+}
+
+footer {
+    background-color: #fefaf6;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-item {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-item i {
+    font-size: 40px;
+    color: #e1c083;
+    margin-bottom: 10px;
+}
+
+.footer-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.footer-item p {
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .cart-section {
+        position: relative;
+    }
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        background-color: #fff;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        width: 100%;
+        border: 1px solid #e5e5e5;
+        z-index: 1;
+        padding: 20px;
+    }
+
+    nav ul.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cart-content {
+        display: block;
+    }
+    
+    .footer-container {
+        display: block;
+    }
+}
